@@ -1,0 +1,6 @@
+kimi@Kimis-MacBook-Pro part-1 %  docker exec -it looper bash
+root@c05c622b461a:/usr/src/app# tail -f ./text.log
+2022-02-21 16:32:25 +0000 UTC
+2022-02-21 16:32:27 +0000 UTC
+2022-02-21 16:32:29 +0000 UTC
+2022-02-21 16:32:31 +0000 UTC

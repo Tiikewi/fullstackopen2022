@@ -1,0 +1,12 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RhYWphIiwiaWQiOiI2MjEwMTdjZmJlNjliYTM3ODUzZWJjNmYiLCJpYXQiOjE2NDUyMjI3NDd9.k7rfwEmzo1oH_MduHyiRqL_wjAw5Dtig-suSLXop-4U
+
+{
+    "title": "Keijokkaan seikkailut 123aaaaaa",
+    "author": "Keijo Keijonenaaaa",
+    "url": "this is urlaaaa"
+
+}
+
+

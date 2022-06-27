@@ -1,0 +1,9 @@
+// POST https://cryptic-garden-26164.herokuapp.com/api/persons
+POST http://localhost:3001/api/persons/
+Content-Type: application/json
+
+{
+    "name": "kk",
+    "number": "040-123123",
+    "id": 2132
+}   

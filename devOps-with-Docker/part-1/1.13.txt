@@ -1,0 +1,20 @@
+FROM golang:1.16
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+RUN go build
+
+ENV REQUEST_ORIGIN=https://example.com
+
+EXPOSE 8080
+
+CMD ./server
+
+
+
+
+
+
+example-backend % docker build . -t back-end && docker run -p 3001:8080 back-end

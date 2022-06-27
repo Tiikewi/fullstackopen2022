@@ -1,0 +1,9 @@
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+    "blogId": "61fe6ab38fd37f469999383c",
+    "username": "Keijokas1234455ssss",
+    "name": "Keijo Keijonen",
+    "password": "salasna"
+}

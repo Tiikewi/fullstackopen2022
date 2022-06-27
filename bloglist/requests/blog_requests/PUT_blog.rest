@@ -1,0 +1,9 @@
+PUT http://localhost:3003/api/blogs/61a1173e1f50c32a13bf13be
+Content-Type: application/json
+
+{ 
+    "title": "Fullstack 2021 testaus",
+    "author": "HY",
+    "url": "www.helsinki.fi",
+    "likes": 9
+}

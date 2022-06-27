@@ -1,0 +1,15 @@
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   11 months ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   11 months ago   15.7MB
+
+kimi@Kimis-MacBook-Pro part-1 % docker run -d -it --name alpine alpine 
+
+kimi@Kimis-MacBook-Pro part-1 % docker exec -it alpine sh
+
+/usr/src/app # tail -f ./text.log
+
+2022-02-21 17:29:43 +0000 UTC
+2022-02-21 17:29:45 +0000 UTC
+2022-02-21 17:29:47 +0000 UTC
+2022-02-21 17:29:49 +0000 UTC
+2022-02-21 17:29:51 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'

@@ -1,0 +1,47 @@
+Back-end:
+
+FROM golang:1.16
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+RUN go build
+
+ENV REQUEST_ORIGIN=http://localhost:5000
+
+EXPOSE 8080
+
+CMD ./server
+
+
+% docker build . -t back-end && docker run -p 8080:8080 back-end
+
+
+
+Front-end:
+
+FROM node:16
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 5000
+
+ENV REACT_APP_BACKEND_URL=http://localhost:8080/
+
+RUN npm run build
+RUN npm install -g serve
+
+CMD ["serve", "-s", "-l", "5000", "build"]
+
+
+% docker build . -t front-end && docker run -p 5000:5000 front-end
+
+
+
